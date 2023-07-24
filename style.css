@@ -49,23 +49,34 @@ a:link{
 }
 
 nav a:link{
-    margin-right: 40px;
-    font-weight: 700;
-    
+    margin-right: 70px;
+    font-weight: 700; 
+    /* color: #f8f9fa; */
+    /* background-color: #12b886;   */
 }
+ nav a:link nav a:visited{
+    color: #495057;
+ }
 
-nav a:link:last-child{
-    margin-right: 0;
+ 
+
+ nav a:hover, nav a:active{
+    color: #0ca678;
+ }
+
+ nav a:link:last-child , nav a:visited:last-child{
+    color: #f8f9fa;
     background-color: #12b886;
     padding: 12px;
-    border-radius: 100px;
-    color: #f8f9fa;
-}
+    border-radius:100px ;
+ }
 
-nav a:link:last-child:hover{
+ 
+
+ nav a:hover:last-child{
     background-color: #0ca678;
-}
-
+    /* color: ; */
+ }
 
 
 
@@ -165,7 +176,8 @@ nav a:link:last-child:hover{
 .about p{
     color: #f8f9fa;
     line-height: 1.7;
-    padding: 0px 20px
+    padding: 0px 20px;
+   
 }
 
 /* common h2 properties */
@@ -231,7 +243,7 @@ h2{
     margin-bottom: 100px;
 }
 .contact-para{
-    color: #868e96;
+    color: #495057;
     font-size: 18px;
 }
 
