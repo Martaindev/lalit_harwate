@@ -206,9 +206,10 @@ body{
     background-color: #077252;
 }
 
-.hero-text-box p{
+.hero p{
     font-size: 1.8rem;
     margin-bottom: 1.8rem;
+    color: #555;
 }
 
 
@@ -316,11 +317,12 @@ nav ul{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    /* font-size: 4rem; */
     letter-spacing: -0.2px;
-    /* line-height:; */
-    /* padding-top: 4rem; */
 
+}
+
+.about-para p{
+    color: #555;
 }
 /* styling skills section */
 
@@ -355,7 +357,7 @@ nav ul{
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    color: #555;
+    color: #777;
     border-radius: 8px;
 }
 

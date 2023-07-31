@@ -270,3 +270,41 @@
 
 
 }
+/* 390 */
+@media (max-width:24.5rem){
+    body{
+        overflow-x: hidden;
+    }
+
+    .hero{
+        padding: 0 5rem;
+    }
+
+    .about{
+        padding: 0;
+    }
+
+    .about-img-box{
+        margin-top:10rem;
+        margin-bottom: 5rem;
+    }
+
+    .skill-box{
+        font-size: 1.9rem;
+        padding: 2.4rem 3rem;
+        /* font-weight: 900; */
+    }
+
+    .skill{
+        padding: 3.2rem 3rem;
+    }
+
+    .contact{
+        padding: 3.2rem 3rem;
+    }
+
+    .hero h1{
+        font-size: 5.5rem;
+        line-height: 1;
+    }
+}
