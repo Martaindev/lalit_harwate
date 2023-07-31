@@ -1,142 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-   <div class="container">
-    <header class="main-header">
-      <nav>
-        <a href="#">About</a>
-        <a href="#">Work</a>
-        <a href="#">Contact</a>
-        <a href="#">Resume</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/queries.css">
+  
+</head>
+<body>
 
-    
-      <div class="main-content">
-      <h2>Hi, I'm Lalit Harwate</h2>
-      <h1>FRONT-END <br> WEB DEVELOPER.</h1>
-      <p>A passionate Frontend web developer specialized in building stunning pixel-perfect interactive websites/applications.</p>
-      <div class="main-link-section">
-        <a href="#">Contact Me</a>
-        <a href="#">Download CV</a>
+  <header class="header ">
+    <img class="logo" width="64" height="64" src="https://img.icons8.com/color/48/code.png" alt="code"/>
+    <nav class="main-nav">
+      <ul class="header-nav-link ">
+        <li > <a class="nav-link  nav-size"  href="#about">About</a></li>
+        <li ><a class="nav-link nav-size" href="#">Work</a></li>
+        <li ><a class="nav-link nav-size" href="#contact">Contact</a></li>
+        <li ><a  class="nav-cta nav-size" href="udemy_html_css_course\section_6\hero\img\hero.jpg" download target="_blank">Resume</a></li>
+      </ul>
+    </nav>
+
+    <button class="btn-mobile-nav">
+      <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+      <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+    </button>
+  </header>
+  <section class="section-hero">
+    <div class="container hero grid grid--2-cols">
+      <div class="hero-text-box">
+        <h3>Hello I'm Lalit</h3>
+        <h1>FrontEnd Web Developer</h1>
+        <p>A passionate Frontend web developer specialized in building stunning pixel-perfect interactive websites/applications.</p>
+        <a href="#contact" class="hero-link margin--right">Contact Me</a>
+        <a href="#" class="hero-link">Download CV</a>
       </div>
+      <div class="hero-img-box">
+        <img src="images/Programming-amico.svg" alt="">
+        <img src="images/Add a subheading.jpg" class="confetti" alt="">
       </div>
-
-      <div class="main-figure">
-        <img src="images/Programming-amico.svg" alt="" srcset="">
-      </div>
-
-
-      <div class="about">
-        
-        <h2 class="sec-header">About</h2>
-        <div class="about-section">
-        <img src="images/lait_again.jpg" alt="" srcset="" width="150px" height="150px">
-        
-        <p>Hello I'm Lalit Harwate. I'm front-end developer with 1 year of experience in maintaining and building web pages. Seeking for new opportunities and challenges that will expand my skill set. Proficient with HTML, CSS and JS. 
-           As a passionate front-end developer, I specialize in creating responsive and user-centric websites. With a solid foundation in HTML, CSS, and JavaScript, I transform design concepts into seamless digital experiences. While I have not yet ventured into React, I am open to exploring new technologies and frameworks to enhance my skillset and contribute to innovative web projects.</p>
-      </div>
-     </div>
-
-      <div class="skills">
-        <h2  class="sec-header">Skills</h2>
-        <div class="skill-section">
-         <figure class="img">
-          <img src="images/icons8-js.svg" alt="js logo">
-          <div class="sub-title">
-            <h3 class="skill-name">JavaScript</h3>
-            <p><svg xmlns="http://www.w3.org/2000/svg" class="levels html" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
-            </svg>Proficient</p>
-          </div>
-         </figure>
-         <figure class="img">
-          <img src="images/icons8-html.svg" alt="js logo">
-          <div class="sub-title">
-            <h3 class="skill-name">HTML</h3>
-            <p><svg xmlns="http://www.w3.org/2000/svg" class="levels html" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
-            </svg>
-            Proficient</p>
-          </div>
-         </figure>
-         <figure class="img">
-          <img src="images/icons8-css.svg" alt="js logo">
-          <div class="sub-title">
-            <h3 >CSS</h3>
-            <p><svg xmlns="http://www.w3.org/2000/svg" class="levels html" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
-            </svg>Proficient</p>
-          </div>
-         </figure>
-         <figure class="img">
-          <img src="images/icons8-react-native.svg" alt="js logo">
-          <div class="sub-title">
-            <h3 class="skill-name">React</h3>
-            <p><svg xmlns="http://www.w3.org/2000/svg" class="levels html" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 16.318A4.486 4.486 0 0012.016 15a4.486 4.486 0 00-3.198 1.318M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
-            </svg>
-            Newbie</p>
-          </div>
-         </figure>
-         <figure class="img">
-          <img src="images/icons8-git.svg" alt="js logo">
-          <div class="sub-title">
-            <h3 class="skill-name">Git</h3>
-            <p><svg xmlns="http://www.w3.org/2000/svg" class="levels html" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
-            </svg>Foundational</p>
-          </div>
-         </figure>
-        </div>
-      </div>
-
-      <div class="contact">
-        <h2 class="sec-header">Contact</h2>
-        <!-- <p class="contact-para">You can contact me via</p> -->
-        <div class="contact-logo" >
-          <figure class="img">
-            <svg xmlns="http://www.w3.org/2000/svg" class="contact-info" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-              <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
-              <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
-            </svg>
-            <p>lalitharwate90@gmail.com</p>
-            
-          </figure>
-
-          <figure class="img">
-            <img src="images/icons8-linkedin.svg">
-            <p>lalitharwate90@gmail.com</p>
-          </figure>
-          
-          <figure class="img">
-            <img src="images/icons8-discord.svg">
-            <p>lalitharwate90@gmail.com</p>
-          </figure>
-        </div>
-      </div>
-      
     </div>
-   </div>
+  </section>
 
-   <footer>
-    <h4>This website was made with pure love ❤️</h4>
-   </footer>
+  <section class="section-about" id="about">
+    <h2 class="sections-header section--border-bottom">About</h2>
+    <div class="about">
+      <div class="about-img-box">
+      <img src="images/lait_again.jpg" alt="selfie of lalit" class="about-img">
+      <img src="images/Add a subheading.jpg" alt="confetti" class="back-img">
+      </div>
+      <div class="about-para">
+      <p>Hello! I am Lalit Harwate, a passionate front-end developer with a strong foundation in HTML, CSS, and JavaScript. My primary focus has been on creating visually appealing and user-friendly websites that deliver a seamless experience to visitors.</p>
+      <p>While I have not yet ventured into React, I am open to exploring new technologies and frameworks to enhance my skillset and contribute to innovative web projects.
+      </p>
+      </div>
+    </div>
+  </section>
 
-   <!-- call to action with posiiton applied dont touch  -->
-   <div class="call-to-action">
-    <a href="#" title="Message me on linkedin"><img src="images/icons8-linkedin.svg" alt="" srcset="">
-    <a href="#" title="Message me on discord"><img src="images/icons8-discord.svg" alt="" srcset="">
-   </div>
-  </body>
+
+  <section class="sections">
+    <h2 class="sections-header">Skills/Technologies</h2>
+    <div class="skill ">
+      <span class="skill-box"><img class="skill-img" src="images/icons8-html.svg" alt="">HTML</span>
+      <span class="skill-box"><img class="skill-img" src="images/icons8-css.svg" alt="">CSS</span>
+      <span class="skill-box"><img class="skill-img" src="images/icons8-js.svg" alt="" srcset="">JavaScript</span>
+      <span class="skill-box"><img class="skill-img" src="images/icons8-git.svg" alt="" srcset="">Git</span>
+    </div>
+  </section>
+
+  <section class="sections" id="contact">
+    <h2 class="sections-header">Contact</h2>
+    <div class="contact">
+      <a href="https://www.linkedin.com/in/lalit-harwate-640a4b282"><span class="skill-box"><img class="skill-img" src="images/icons8-linkedin-1.svg" alt="linkedin logo">Lalit Harwate
+</span></a>
+      <a href="mailto:lalitharwate90@gmail.com"><span class="skill-box"><img class="skill-img" src="images/icons8-gmail.svg" alt="gmail logo">Send Mail</span></a>
+      <span class="skill-box"><img class="skill-img" src="images/icons8-discord (1).svg" alt="">discord</span>
+    </div>
+  </section>
+
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script>
+    const headerEl = document.querySelector('.header')
+    const btnEl = document.querySelector('.btn-mobile-nav')
+    btnEl.addEventListener('click',function(){
+      headerEl.classList.toggle('nav-open')
+    });
+  </script>
+  
+</body>
 </html>

@@ -1,0 +1,387 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1;
+    font-family: 'Lato', sans-serif;
+    text-decoration:none;
+    color: #333;
+    
+}
+
+html{
+    overflow-x: hidden;
+}
+
+
+@keyframes bounce {
+    0%{
+        transform: translateY();
+    }
+
+    12%,14%{
+        transform: translateY(-8px);
+    }
+
+    50%{
+        transform: translateY(-6px);
+    }
+
+
+    80%{
+        transform: translateY(-4px);
+    }
+    90%,75%{
+        transform: translateY(-2px);
+    }
+
+
+    60%,100%{transform: translate(0);}
+}
+
+.logo{
+    margin-left: 1rem;
+    animation: bounce 0.5s ease-in 0s 1 normal none;
+}
+
+.logo:hover{
+    animation: bounce 0.6s ease-in 1s infinite normal none;
+}
+
+
+/* styling button */
+.btn-mobile-nav{
+    border: none;
+    cursor: pointer;
+    display: none;
+    background: none;
+    font-size: 8rem;
+
+}
+
+.icon-mobile.nav{
+    height: 4.6rem;
+    width: 4.6rem;
+}
+
+
+
+.icon-mobile-nav[name="close-outline"]{
+    display: none;
+}
+
+
+
+.margin--after-container{
+    margin-bottom: 0rem;
+}
+
+.sections-header{
+    font-size: 3.6rem;
+    letter-spacing:-1.8px;
+    font-weight: 900;
+    margin-bottom: 4rem;
+}
+
+.section--border-bottom{
+    margin-bottom: 6rem;
+}
+
+.grid{
+    display: grid;
+}
+
+.margin--right{
+    margin-right: 2rem;
+}
+
+.grid--2-cols{
+    grid-template-columns: repeat(2,1fr);
+}
+
+.grid--3-cols{
+    grid-template-columns: repeat(3,1fr);
+}
+
+html{
+    font-size:62.5%
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+.sections{
+    padding: 9.6rem 4.2rem;
+}
+
+
+/* styling hero section */
+/* .section-hero{
+    padding: 9.6rem 4.2rem;
+} */
+
+.hero-img-box{
+    width: 100%;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header h1{
+    font-size: 2.4rem;
+    font-weight: 900;
+    color: #555;
+}
+
+.green{
+    color: #077252;
+}
+
+.hero{
+    max-width: 130rem;
+    margin: 0 auto;
+    align-items: center;
+    gap: 4rem;
+    padding: 0 9.8rem;
+    height: 100vh;
+}
+
+
+
+
+.hero h1{
+    font-size: 6.2rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    line-height:0.8 ;
+    letter-spacing: -3.5px;
+    font-weight: 900;
+}
+
+.hero h3{
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+    letter-spacing: -1.5px;
+}
+
+.hero-img-box{
+    position: relative;
+}
+
+.confetti{
+    position: absolute;
+    z-index: -99;
+    top: 0;
+    left: 0;
+    opacity: 80%;
+    width: 100%;
+}
+.hero-description{
+    font-size: 1.8rem;
+    margin-bottom: 4.2rem;
+    color: #555;
+    line-height: 1.4;
+    letter-spacing:-0.9px;
+    font-weight: 500;
+}
+
+.hero-link:link,.hero-link:visited{
+    display: inline-block;
+    color: #fff;
+    background-color: #218c6b;
+    padding: 1.8rem 3.6rem;
+    border-radius: 100px;
+    font-weight: 900;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+
+    transition: all 0.2s ease-in;
+}
+
+.hero-link:hover, .hero-link:active{
+    background-color: #077252;
+}
+
+.hero-text-box p{
+    font-size: 1.8rem;
+    margin-bottom: 1.8rem;
+}
+
+
+/* styling header */
+
+/* later add glassmorphism */
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    z-index: 1000;
+    background-color: #ffffff;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 6rem;
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+.nav-cta:link, .nav-cta:visited{
+    background-color:#218c6b ;
+    padding: 1.2rem 2.4rem;
+    color: #fff;
+    border-radius: 100px;
+    transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+
+}
+
+.nav-cta:hover, .nav-cta:active{
+    background-color: #077252;
+}
+
+.nav-link:hover,.nav-link:active{
+    color: #077252;
+}
+
+.nav-size{
+    font-size: 2rem;
+}
+
+/* styling about section */
+.section-about{
+    padding: 9.6rem 7rem;
+}
+
+.about{
+    max-width: 120rem;
+    margin: 0 auto;
+    /* background-color: #218c6b; */
+    /* opacity: ; */
+    color: #555;
+    padding: 3.2rem 4.8rem 3.2rem 4.8rem;
+    /* border-radius: 8px; */
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+    /* box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75); */
+
+}
+
+.about-img{
+    /* width: 15%; */
+    width: 25rem;
+    /* border-radius: 8px; */
+    display: inline-block;
+    clip-path: circle();
+
+}
+
+.about-img-box{
+    position: relative;
+}
+
+.back-img{
+    position: absolute;
+
+    z-index: -999;
+    width: 30rem;
+    
+}
+
+.about p{
+    font-size: 2.0rem;
+    color: #333;
+    margin-left: 2rem;
+    line-height: 1.6;
+}
+
+.about-img-box{
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.about-para{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* font-size: 4rem; */
+    letter-spacing: -0.2px;
+    /* line-height:; */
+    /* padding-top: 4rem; */
+
+}
+/* styling skills section */
+
+.section-skills{
+    padding: 9.6rem 4.2rem;
+}
+
+.hero{
+    margin-bottom: 6rem;
+}
+
+.skill{
+    max-width: 130rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 6rem;
+    padding: 3.2rem 4.8rem 3.2rem 4.8rem;
+    /* column-gap: 6rem; */
+}
+
+
+.skill-box{
+    height: 20rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    /* background-color: red; */
+    padding: 2.4rem 4.8rem;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.184);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: #555;
+    border-radius: 8px;
+}
+
+.skill-img{
+    width: 5rem;
+    height: 5rem;
+}
+
+
+
+/* styling contact */
+
+.section-contact{
+    padding: 9.6rem 4.2rem;
+}
+
+.contact{
+    max-width: 130rem;
+    /* height: 20rem; */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 7rem;
+    /* padding: 3.2rem 4.8rem 3.2rem 8.6rem; */
+    padding: 2.4rem 4.8rem;
+}
+
+
+
