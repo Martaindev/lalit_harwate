@@ -222,7 +222,7 @@
         align-items: center;
         flex-direction: column;
         transition: all 0.3s ease-in;
-
+     
         transform: translateX(100%);
         
     }
@@ -239,7 +239,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 5rem;
+        /* gap: 5rem; */
     }
 
     .nav-size:link, .nav-size:visited{
@@ -307,4 +307,5 @@
         font-size: 5.5rem;
         line-height: 1;
     }
+  
 }
